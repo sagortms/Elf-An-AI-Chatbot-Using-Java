@@ -54,4 +54,4 @@ show gmail password                          my gmail data show me
 what is 12 * (3 + 4)                         what do i have tomorrow
 ```
 
-The full guide is in `ReadMe/Elf_Project_Documentation.docx`.
+The full guide is in `Documentation/Elf_Project_Documentation.docx`.
