@@ -1,0 +1,4 @@
+0|AI project final at 10 AM
+0|Web project final at 12:30 PM
+0|Finish the AI assignment
+1|Install JDK
