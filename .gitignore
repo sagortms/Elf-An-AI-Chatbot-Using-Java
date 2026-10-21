@@ -1,0 +1,712 @@
+# All gitignore files
+# ==========================================
+# 1. SECURITY, SECRETS & ENVIRONMENT VARIABLES
+# ==========================================
+
+# Environment variables file (contains passwords, API keys)
+.env
+
+# Target all variations of env files (e.g. .env.local, .env.production)
+.env.*
+
+# Keep example file so developers know required variables
+!.env.example
+
+# Keep template file as setup guide
+!.env.template
+
+# Keep sample file as setup guide
+!.env.sample
+
+# Private SSL/TLS certificates & RSA keys
+*.pem
+
+# Private encryption keys
+*.key
+
+# SSL certificate files
+*.crt
+
+# Personal Information Exchange PKCS#12 certificates
+*.pfx
+
+# PKCS#12 certificate/key bundles (alternate extension)
+*.p12
+
+# SSH RSA keys, private and public (id_rsa, id_rsa.pub)
+id_rsa*
+
+# SSH ed25519 keys, private and public
+id_ed25519*
+
+# SSH ECDSA keys, private and public
+id_ecdsa*
+
+# SSH DSA keys, private and public
+id_dsa*
+
+# Android release key stores
+*.keystore
+
+# Java key stores (also used for Android signing)
+*.jks
+
+# Android/Flutter signing config holding keystore passwords
+key.properties
+
+# Same signing config when nested in subfolders (e.g. android/key.properties)
+**/key.properties
+
+# Apple provisioning profiles (tied to your developer account)
+*.mobileprovision
+
+# Apple App Store Connect / APNs auth keys
+*.p8
+
+# Generic cloud/API credentials file
+credentials.json
+
+# Google Cloud service account keys (e.g. serviceAccountKey.json)
+serviceAccount*.json
+
+# Service account keys written with a hyphen
+service-account*.json
+
+# Any credentials file with a prefix (e.g. gcp-credentials.json)
+*-credentials.json
+
+# Firebase config - uncomment the next two lines if you want these private
+# google-services.json
+# GoogleService-Info.plist
+
+# Terraform provider/plugin cache directory
+.terraform/
+
+# Terraform state files (can contain secrets in plain text)
+*.tfstate
+
+# Terraform state backups (terraform.tfstate.backup)
+*.tfstate.*
+
+# Terraform variable files (often hold secrets)
+*.tfvars
+
+# SQLite database files (delete these 3 lines if you commit a DB on purpose)
+*.sqlite
+
+# SQLite3 database files
+*.sqlite3
+
+# Generic local database files
+*.db
+
+# ==========================================
+# 2. OPERATING SYSTEM JUNK FILES
+# ==========================================
+# macOS
+
+# macOS Finder desktop services store (folder layout metadata)
+.DS_Store
+
+# Apple Double resource fork metadata files
+.AppleDouble
+
+# Launch Services override configurations
+.LSOverride
+
+# AppleDouble shadow files created on non-HFS filesystems
+._*
+
+# macOS document revisions directory
+.DocumentRevisions-V100
+
+# macOS file system events logging directory
+.fseventsd
+
+# Spotlight indexing database folder
+.Spotlight-V100
+
+# macOS user trash folder on external drives
+.Trashes
+
+# Custom volume icons
+.VolumeIcon.icns
+
+# Prevents Time Machine from backing up specific drives
+.com.apple.timemachine.donotpresent
+
+# Windows
+
+# Windows Explorer thumbnail cache database
+Thumbs.db
+
+# Encrypted thumbnail database streams
+Thumbs.db:encryptable
+
+# Windows Media Center thumbnail cache
+ehthumbs.db
+
+# Windows Vista Media Center thumbnail cache
+ehthumbs_vista.db
+
+# Windows folder customization configuration file
+Desktop.ini
+
+# Windows system recycling bin directory
+$RECYCLE.BIN/
+
+# Windows application crash stack traces
+*.stackdump
+
+# Windows desktop shortcuts
+*.lnk
+
+# Linux
+
+# Linux desktop application launcher files
+*.desktop
+
+# Temporary backup files created by Linux editors
+*~
+
+# Temporary files created by FUSE file systems
+.fuse_hidden*
+
+# KDE desktop folder view settings file
+.directory
+
+# Linux Trash bin directories
+.Trash-*
+
+# Network File System (NFS) temporary lock files
+.nfs*
+
+# ==========================================
+# 3. CODE EDITORS, IDEs & AI TOOLS
+# ==========================================
+# VS Code & Cursor AI
+
+# Ignore everything inside .vscode (use "/*" not "/", otherwise the "!" exceptions below cannot work)
+.vscode/*
+
+# Retain team settings
+!.vscode/settings.json
+
+# Retain automated task configurations
+!.vscode/tasks.json
+
+# Retain debugging configurations
+!.vscode/launch.json
+
+# Retain recommended extensions list
+!.vscode/extensions.json
+
+# VS Code workspace structure file
+*.code-workspace
+
+# Local file history extension data
+.history/
+
+# Cursor AI editor local state directory
+.cursor/
+
+# Optional Cursor rules (uncomment if you want to exclude local rules)
+# .cursorrules
+
+# Code::Blocks
+
+# Code::Blocks internal file dependencies tracker
+*.depend
+
+# Code::Blocks user window layout and open editor tab metadata
+*.layout
+
+# Code::Blocks user-specific project target settings
+*.cbp.user
+
+# Code::Blocks compiled object files directory
+*.objs/
+
+# Code::Blocks compiled binary outputs directory
+*.bin/
+
+# JetBrains (PyCharm, IntelliJ, WebStorm, Android Studio, PhpStorm, CLion, GoLand)
+
+# JetBrains internal project metadata folder
+.idea/
+
+# JetBrains workspace properties file
+*.iws
+
+# JetBrains module file
+*.iml
+
+# JetBrains project configuration file
+*.ipr
+
+# AI & Developer Tools (Claude, Codex, Antigravity, Copilot, Windsurf, Devin)
+
+# Claude CLI / agent local cache and session state directory
+.claude/
+
+# Claude Dev extension cache and temporary settings
+.claude-dev/
+
+# OpenAI Codex local configuration and state directory
+.codex/
+
+# Google Antigravity local agent workspace metadata
+.antigravity/
+
+# GitHub Copilot local workspace settings and cache
+.copilot/
+
+# Windsurf AI editor local cache and state
+.windsurf/
+
+# Devin AI agent workspace cache files
+.devin/
+
+# Ollama local model running cache
+.ollama/
+
+# LM Studio local metadata and cache
+.lmstudio/
+
+# Vim / Neovim / Emacs
+
+# Vim swap buffer files for active edits
+.*.sw[a-z]
+
+# Vim undo history files
+*.un~
+
+# Saved Vim editor sessions
+Session.vim
+
+# Vim directory browser file history
+.netrwhist
+
+# Emacs auto-saved file buffers (#file#) - the "#" is escaped so Git does not read it as a comment
+\#*\#
+
+# Emacs lock files pointing to open buffers
+.#*
+
+# Visual Studio / Sublime Text
+
+# Visual Studio local solution settings
+.vs/
+
+# Visual Studio user options file
+*.suo
+
+# Visual Studio personal project options
+*.user
+
+# Visual Studio OS-specific settings
+*.userosv
+
+# Visual Studio open documents state
+*.sln.docstates
+
+# Sublime Text workspace layout
+*.sublime-workspace
+
+# Sublime Text project settings
+*.sublime-project
+
+# ==========================================
+# 4. LOGS, TEMPORARY & BACKUP FILES
+# ==========================================
+
+# System, application, and execution log files
+*.log
+
+# General application log storage directory
+logs/
+
+# Temporary system files
+*.tmp
+
+# Backup files created by manual edits or tools
+*.bak
+
+# General swap files
+*.swp
+
+# Process ID tracker files for running services
+*.pid
+
+# Lockfiles ensuring single-instance execution
+*.pid.lock
+
+# ==========================================
+# 5. NODE.JS / JAVASCRIPT / TYPESCRIPT
+# ==========================================
+
+# NPM and Yarn downloaded package dependencies folder
+node_modules/
+
+# JSPM client-side package directory
+jspm_packages/
+
+# Legacy Bower frontend packages
+bower_components/
+
+# Local NPM cache folder
+.npm/
+
+# pnpm global content-addressable store
+.pnpm-store/
+
+# Yarn Plug'n'Play resolution files
+.pnp.*
+
+# NPM debug logs
+npm-debug.log*
+
+# Yarn v1 debug logs
+yarn-debug.log*
+
+# Yarn error logs
+yarn-error.log*
+
+# pnpm debug logs
+pnpm-debug.log*
+
+# ESLint speed optimization caching file
+.eslintcache
+
+# Stylelint cache file
+.stylelintcache
+
+# History of commands run inside Node.js REPL
+.node_repl_history
+
+# Parcel bundler cache
+.parcel-cache/
+
+# Turborepo local cache
+.turbo/
+
+# Generic tool cache folder
+.cache/
+
+# TypeScript incremental build info files
+*.tsbuildinfo
+
+# Tarball packages created by npm pack
+*.tgz
+
+# Yarn dependency verification file
+*.yarn-integrity
+
+# Yarn v2+ offline package cache
+.yarn/cache
+
+# Yarn v2+ unzipped packages
+.yarn/unplugged
+
+# Test coverage reports
+coverage/
+
+# NYC (Istanbul) coverage output
+.nyc_output/
+
+# Next.js production build output directory
+.next/
+
+# Nuxt.js production build output directory
+.nuxt/
+
+# SvelteKit build output directory
+.svelte-kit/
+
+# Vercel local deployment config/cache
+.vercel/
+
+# Expo (React Native) local state
+.expo/
+
+# Transpiled and bundled distribution files
+dist/
+
+# Production build assets folder
+build/
+
+# ==========================================
+# 6. PYTHON
+# ==========================================
+
+# Python compiled bytecode cache directories
+__pycache__/
+
+# Python compiled files (.pyc, .pyo, .pyd)
+*.py[cod]
+
+# Jython compiled Java class files
+*$py.class
+
+# C-extensions compiled binaries for Python
+*.so
+
+# Python core environment marker file
+.Python
+
+# Python virtual environment directory
+env/
+
+# Default virtual environment folder
+venv/
+
+# Alternative virtual environment name
+ENV/
+
+# Virtual environment backup folder
+env.bak/
+
+# Backup of venv virtual environment
+venv.bak/
+
+# Hidden virtual environment folder
+.venv/
+
+# PyTest execution cache directory
+.pytest_cache/
+
+# Python code coverage output metrics
+.coverage
+
+# HTML report files generated by Coverage.py
+htmlcov/
+
+# MyPy static type check analysis cache
+.mypy_cache/
+
+# Ruff Python linter cache directory
+.ruff_cache/
+
+# Tox testing environments
+.tox/
+
+# Hypothesis testing library cache
+.hypothesis/
+
+# Jupyter notebook auto-save checkpoints
+.ipynb_checkpoints/
+
+# Python library metadata directory
+*.egg-info/
+
+# Built egg packages
+*.egg
+
+# Temporary egg files created during package builds
+.eggs/
+
+# pip installation log
+pip-log.txt
+
+# ==========================================
+# 7. BASH & SHELL SCRIPTS
+# ==========================================
+
+# Saved history of executed Bash commands
+.bash_history
+
+# Saved history of executed Zsh commands
+.zsh_history
+
+# Generic Shell command history
+.sh_history
+
+# User environment startup configuration
+.bash_profile
+
+# Interactive Bash runtime settings
+.bashrc
+
+# Backup files generated during script edits
+*.sh.bak
+
+# Standard error dump files from background execution
+sh.err
+
+# Standard output log files from background scripts
+sh.out
+
+# ==========================================
+# 8. JAVA / KOTLIN / GRADLE / MAVEN
+# ==========================================
+
+# Compiled Java bytecode files
+*.class
+
+# Java Archive executable packages
+*.jar
+
+# Web Application Archive packages
+*.war
+
+# Enterprise Application Archive packages
+*.ear
+
+# Native Archive packages
+*.nar
+
+# Resource Adapter Archive packages
+*.rar
+
+# Gradle wrapper jar MUST be committed, so re-include it after "*.jar" above
+!gradle/wrapper/gradle-wrapper.jar
+
+# Same wrapper jar when inside a subfolder (e.g. android/gradle/wrapper/)
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Maven output distribution folder
+target/
+
+# Gradle internal working cache directory
+.gradle/
+
+# Compiled binary outputs - root level only, so source folders like src/bin/ stay tracked
+/bin/
+
+# Build output directory - root level only
+/out/
+
+# ==========================================
+# 9. C / C++ / GO / RUST
+# ==========================================
+
+# Compiled C/C++ object code files
+*.o
+
+# MSVC compiled object files
+*.obj
+
+# Default executable output files
+*.out
+
+# macOS compiled application bundles
+*.app
+
+# Windows standalone executable binaries
+*.exe
+
+# Windows Dynamic Link Libraries
+*.dll
+
+# macOS Dynamic Libraries
+*.dylib
+
+# Static library files
+*.a
+
+# MSVC static library files
+*.lib
+
+# Command line editor state files
+*.history
+
+# Go
+
+# Go vendor folder created by go mod vendor
+/vendor/
+
+# Rust
+
+# Rust build output is already covered by "target/" in the Java section above
+
+# ==========================================
+# 10. DOCKER & CI/CD PIPELINES
+# ==========================================
+
+# Local Docker configuration directory
+.docker/
+
+# Local dev environment overrides for Docker Compose
+docker-compose.override.yml
+
+# Local development environment definitions
+*.dev.env
+
+# Trivy security vulnerability scanner cache
+.trivy/
+
+# SonarQube code quality analysis cache
+.sonar/
+
+# GitLab CI/CD runner local cache folder
+.gitlab-ci.yml.cache
+
+# ==========================================
+# 11. MOBILE DEV (FLUTTER / ANDROID / IOS)
+# ==========================================
+
+# Flutter plugin path mappings
+.flutter-plugins
+
+# Internal Flutter dependencies mapping file
+.flutter-plugins-dependencies
+
+# Dart language execution cache and build folder
+.dart_tool/
+
+# Package resolution cache for Flutter/Dart
+.pub-cache/
+
+# Intermediate build artifacts for Dart web projects
+.pub/
+
+# Legacy Dart package resolution file
+.packages
+
+# Flutter Version Management (FVM) local SDK link
+.fvm/
+
+# Android Studio local Gradle build cache
+android/.gradle
+
+# Profiler capture dumps for Android Studio
+android/captures/
+
+# Android local SDK path file (differs per machine)
+android/local.properties
+
+# Local SDK path file for any Android project
+local.properties
+
+# Android APK build outputs
+*.apk
+
+# Android App Bundle build outputs
+*.aab
+
+# CocoaPods downloaded libraries for iOS
+ios/Pods/
+
+# Flutter iOS framework symlinks
+ios/.symlinks/
+
+# Auto-generated Flutter Xcode config (machine-specific)
+ios/Flutter/Generated.xcconfig
+
+# Auto-generated Flutter environment script for Xcode
+ios/Flutter/flutter_export_environment.sh
+
+# Auto-generated Flutter plugin registrant files
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Xcode per-user settings and breakpoints
+xcuserdata/
+
+# Xcode build output folder
+DerivedData/
+
+# Xcode per-user UI state
+*.xcuserstate
+
+# iOS app archive build outputs
+*.ipa
