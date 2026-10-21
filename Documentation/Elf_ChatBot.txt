@@ -1,0 +1,22 @@
+Elf - An AI Chatbot
+
+All data is stored as small text files inside the data/ folder, which is created next to the
+program the first time it starts (together with the demo account mutant / mutant1234).
+
+data/users.txt                          accounts: username | full name | salt | password hash | created
+data/<username>/chat_history.txt        conversation log
+data/<username>/to-do.txt               to-do list
+data/<username>/reminders.txt           timed reminders
+data/<username>/memories.txt            things Elf was asked to remember
+data/<username>/life_story.txt          life story entries
+data/<username>/vault.meta              vault passkey check (salted hash) and key salt
+data/<username>/vault.txt               saved passwords and passkeys, every line AES-GCM encrypted
+data/<username>/settings.properties     theme, text size, assistant name, clock, nickname ...
+
+Source files (src/):
+  User interface      ElfChatBot, LoginFrame, MainFrame, Page, DashboardPanel, ChatPanel, TasksPanel,
+                      NotesPanel, VaultPanel, HelpPanel, SettingsPanel, AccountPanel, Theme
+  Language and logic  ChatBotLogic, VaultChat, VaultParser, TimeParser, TextUtil, Calculator,
+                      MoodDetector, Motivator, KnowledgeBase
+  Accounts, storage   UserManager, User, Settings, Crypto, Vault, ReminderManager, MemoryManager,
+                      ChatLog, FileStore
